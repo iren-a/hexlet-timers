@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Timer App</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div id="app">
+      <div>
+        <input type="number" id="time-input" placeholder="Введите время в секундах">
+        <button id="add-timer">Добавить таймер</button>
+      </div>
+      <ul id="timers" class="timers">
+        <!-- Таймеры будут добавляться сюда -->
+      </ul>
+      <template id="timer-template">
+        <li class="timer">
+          <div class="timer__progress">
+            <span class="timer__value"></span>
+          </div>
+          <button class="timer__clear">Удалить</button>
+        </li>
+      </template>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
